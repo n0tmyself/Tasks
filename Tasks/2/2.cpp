@@ -16,8 +16,9 @@ void Сompletion(int** vec, const size_t& n, const size_t& m)
 }
 
 int main(){
-    size_t n, m;
-    std::cin >> n >> m;
+    size_t n = 5;
+    size_t m = 3;
+    //std::cin >> n >> m;
 
     int ** vec = new int * [n];
     for(size_t i = 0; i < n; ++i)

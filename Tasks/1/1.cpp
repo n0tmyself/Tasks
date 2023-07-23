@@ -11,8 +11,8 @@ void Сompletion(int* vec, const size_t& n)
 
 int main()
 {
-    int n; 
-    std::cin >> n;
+    int n = 10; 
+    //std::cin >> n;
 
     int * vec = new int[n];
 

@@ -12,8 +12,8 @@ private:
 protected:
 public:
     explicit CMatrix(int  m_N);
-    void FillSnake(int** m_ppMatrix, int m_N);
-    void Print(int** m_ppMatrix, int m_N);
+    void FillSnake();
+    void Print();
     ~CMatrix();
 };
 

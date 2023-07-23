@@ -11,7 +11,7 @@ CMatrix::CMatrix(int N)
     }
 }
 
-void CMatrix::FillSnake(int ** m_ppMatrix, int m_N)
+void CMatrix::FillSnake()
 {
     int k = 1;
     size_t i = 0;
@@ -51,7 +51,7 @@ void CMatrix::FillSnake(int ** m_ppMatrix, int m_N)
     }
 }
 
-void CMatrix::Print(int** m_ppMatrix, int m_N)
+void CMatrix::Print()
 {
     for(size_t i = 0; i < m_N ; ++i){
         for(size_t j = 0; j < m_N; ++j){
@@ -64,6 +64,13 @@ void CMatrix::Print(int** m_ppMatrix, int m_N)
     }    
 }
 
+int main()
+{
+    CMatrix matrix = CMatrix(9);
+    matrix.FillSnake();
+    matrix.Print();
+    //matrix.~CMatrix();
+}
 
 
 CMatrix::~CMatrix()
