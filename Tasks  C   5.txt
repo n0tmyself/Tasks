@@ -1,0 +1,58 @@
+Задание 8.a
+Заполнить вектор std::vector<int> значениями чисел от 0 до 10.
+Вывести его на печать.
+Удалить из вектора все нечетные числа.
+Вывести значения вектора на печать на печать.
+Упорядочить содержимое вектора в обратном порядке с помощью алгоритма qsort (9, 7, ... 1)
+
+Научиться использовать конструкции с итераторами:
+
+std::vector<int> V;
+V.push_back(0);
+...
+v.push_back(10);
+
+std::vector<int>::iterator Beg(V.begin());
+std::vector<int>::iterator End(V.end());
+std::vector<int>::iterator Iter;
+for(Iter = Beg; Iter != End (или V.end()); ++Iter)
+{
+    ...
+}
+
+и с auto переменными:
+for(auto& rVariable : V)
+{
+	printf("rVariable = %d", rVariable);
+}
+
+Задание 8.b
+Заполнить список std::list<char> значениями букв от A до Z.
+Вывести его на печать.
+Удалить из списка все буквы через одну (должно остаться A, C, E, ..).
+Вывести значения списка на печать на печать.
+Упорядочить содержимое вектспискаора в обратном порядке с помощью алгоритма qsort (... C, A)
+
+Научиться использовать конструкции с итераторами:
+
+std::list<int> L;
+L.push_back('A');
+...
+L.push_back('Z');
+
+std::list<int>::iterator Beg(L.begin());
+std::list<int>::iterator End(L.end());
+std::list<int>::iterator Iter;
+for(Iter = Beg; Iter != End; ++Iter)
+{
+    ...
+}
+
+и с auto переменными:
+for(auto& rVariable : L)
+{
+	printf("rVariable = %c", rVariable);
+}
+
+
+
